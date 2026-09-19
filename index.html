@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>National Youth Convention 2026 — Walking with God</title>
+<meta name="description" content="National Youth Convention 2026 — Redemption Truth Assembly. October 7-11, 2026. Registration is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#3B1E6D;
+    --purple-deep:#2A1550;
+    --gold:#E7A83B;
+    --orange:#E15B2D;
+    --green:#2F8F52;
+    --cream:#F7F1E3;
+    --ink:#221A12;
+    --white:#FFFFFF;
+    --max: 1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Manrope', sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  .display{
+    font-family:'Anton', sans-serif;
+    font-weight:400;
+    line-height:0.95;
+    letter-spacing:0.5px;
+  }
+  a{color:inherit;}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--orange);
+    color:var(--white);
+    font-weight:700;
+    font-size:1.05rem;
+    padding:16px 30px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+    box-shadow:5px 5px 0 var(--purple-deep);
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover{ transform:translate(-2px,-2px); box-shadow:7px 7px 0 var(--purple-deep); }
+  .btn:active{ transform:translate(0,0); box-shadow:2px 2px 0 var(--purple-deep); }
+  .btn-outline{
+    background:transparent;
+    border:2px solid var(--white);
+    color:var(--white);
+    box-shadow:none;
+  }
+  .btn-outline:hover{ background:rgba(255,255,255,0.1); box-shadow:none; }
+
+  section{ padding:76px 0; position:relative; overflow:hidden; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--purple);
+    color:var(--cream);
+    padding:56px 0 70px;
+    position:relative;
+  }
+  .hero .ring{
+    position:absolute;
+    border-radius:50%;
+    border-style:solid;
+    opacity:0.9;
+  }
+  .hero .ring--1{ width:150px;height:150px; border-width:22px; border-color:var(--orange) transparent var(--gold) transparent; top:-40px; right:-40px; transform:rotate(20deg); }
+  .hero .ring--2{ width:90px;height:90px; border-width:16px; border-color:var(--green) transparent var(--green) transparent; bottom:20px; left:-30px; transform:rotate(60deg); }
+  .hero .hero-grid{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:50px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+  }
+  .hero .flyer-wrap{
+    display:flex;
+    justify-content:center;
+  }
+  .hero .flyer-wrap img{
+    max-width:340px;
+    width:100%;
+    border-radius:10px;
+    box-shadow:14px 14px 0 var(--orange), 0 20px 40px rgba(0,0,0,0.35);
+    transform:rotate(-2deg);
+  }
+  @media (max-width:820px){
+    .hero .hero-grid{ grid-template-columns:1fr; }
+    .hero .flyer-wrap{ order:-1; margin-bottom:10px; }
+    .hero .flyer-wrap img{ max-width:280px; }
+  }
+  .site-header{
+    background:var(--cream);
+    padding:16px 0;
+    border-bottom:4px solid var(--gold);
+  }
+  .site-header .wrap{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .site-header img{ width:52px; height:auto; border-radius:6px; }
+  .site-header .name{
+    font-weight:800;
+    font-size:1.05rem;
+    color:var(--purple);
+    line-height:1.2;
+  }
+  .site-header .name span{
+    display:block;
+    font-weight:600;
+    font-size:0.78rem;
+    color:var(--ink);
+    text-transform:none;
+  }
+
+  .kicker{
+    font-size:0.95rem;
+    font-weight:700;
+    color:var(--gold);
+    margin:0 0 18px;
+  }
+  .hero h1{
+    font-size:clamp(3rem, 11vw, 6.2rem);
+    color:var(--gold);
+    margin:0;
+    text-shadow:4px 4px 0 var(--orange);
+  }
+  .hero .tag-bar{
+    display:inline-block;
+    background:var(--green);
+    color:var(--white);
+    font-weight:800;
+    font-size:clamp(1.1rem, 3vw, 1.6rem);
+    padding:8px 20px;
+    margin-top:20px;
+    transform:rotate(-1.5deg);
+  }
+  .hero .scripture{
+    margin-top:26px;
+    font-size:0.98rem;
+    color:#D9CBEE;
+    max-width:480px;
+  }
+  .hero .cta-row{ margin-top:34px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; }
+
+  /* Countdown */
+  .countdown{
+    display:flex;
+    gap:14px;
+    margin-top:44px;
+    flex-wrap:wrap;
+  }
+  .countdown .cell{
+    background:var(--white);
+    color:var(--purple);
+    border-radius:8px;
+    padding:14px 16px;
+    min-width:76px;
+    text-align:center;
+    box-shadow:4px 4px 0 var(--orange);
+  }
+  .countdown .cell .num{
+    font-family:'Anton', sans-serif;
+    font-size:2rem;
+    line-height:1;
+    display:block;
+  }
+  .countdown .cell .lbl{
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:700;
+    color:var(--orange);
+  }
+
+  /* ---------- WHY SECTION ---------- */
+  .why{ background:var(--cream); }
+  .why-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:50px;
+    align-items:center;
+  }
+  .eyebrow-block{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--ink);
+    font-weight:800;
+    padding:5px 14px;
+    transform:rotate(-1deg);
+    margin-bottom:16px;
+    font-size:0.95rem;
+  }
+  .why h2{
+    font-size:clamp(1.9rem,4vw,2.6rem);
+    margin:0 0 20px;
+    line-height:1.15;
+  }
+  .why p{ font-size:1.08rem; max-width:52ch; }
+  .why-art{
+    position:relative;
+    height:280px;
+  }
+  .why-art .blob{
+    position:absolute;
+    border-radius:40% 60% 55% 45% / 50% 45% 55% 50%;
+  }
+  .why-art .blob--1{ width:220px;height:220px; background:var(--purple); top:0; left:20px; }
+  .why-art .blob--2{ width:140px;height:140px; background:var(--orange); bottom:0; right:20px; opacity:0.9;}
+  .why-art .blob--3{ width:90px;height:90px; background:var(--green); top:60px; right:60px; }
+
+  /* ---------- CARDS SECTION ---------- */
+  .expect{ background:var(--white); }
+  .expect .head{ max-width:620px; margin-bottom:46px; }
+  .expect h2{ font-size:clamp(1.9rem,4vw,2.6rem); margin:0 0 14px; }
+  .card-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  .card{
+    border:3px solid var(--ink);
+    border-radius:10px;
+    padding:28px 24px;
+    background:var(--cream);
+  }
+  .card:nth-child(1){ border-color:var(--purple); }
+  .card:nth-child(2){ border-color:var(--orange); }
+  .card:nth-child(3){ border-color:var(--green); }
+  .card .icon{ width:44px; height:44px; margin-bottom:16px; }
+  .card h3{ margin:0 0 10px; font-size:1.25rem; }
+  .card p{ margin:0; font-size:0.98rem; }
+
+  /* ---------- MINISTERS ---------- */
+  .ministers{ background:var(--purple-deep); color:var(--cream); }
+  .ministers h2{ font-size:clamp(1.9rem,4vw,2.6rem); margin:0 0 40px; color:var(--gold); }
+  .min-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+  }
+  .min-card{ text-align:center; }
+  .min-photo{
+    width:130px;height:130px;
+    border-radius:50%;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Anton',sans-serif;
+    font-size:2.4rem;
+    color:var(--white);
+  }
+  .min-card:nth-child(1) .min-photo{ background:var(--orange); transform:rotate(-3deg);}
+  .min-card:nth-child(2) .min-photo{ background:var(--green); transform:rotate(3deg);}
+  .min-card:nth-child(3) .min-photo{ background:var(--gold); color:var(--purple-deep); transform:rotate(-3deg);}
+  .min-card h3{ margin:0 0 4px; font-size:1.15rem; }
+  .min-card p{ margin:0; font-size:0.92rem; color:#CBB8EA; }
+
+  /* ---------- STAT BANNER ---------- */
+  .stat{
+    background:var(--gold);
+    color:var(--purple-deep);
+    text-align:center;
+    padding:60px 0;
+  }
+  .stat .num{
+    font-family:'Anton',sans-serif;
+    font-size:clamp(3.2rem,10vw,5.5rem);
+    line-height:1;
+  }
+  .stat p{ font-size:1.15rem; font-weight:600; max-width:460px; margin:10px auto 0; }
+
+  /* ---------- GALLERY ---------- */
+  .gallery{ background:var(--cream); }
+  .gallery .head{ max-width:600px; margin-bottom:44px; }
+  .gallery h2{ font-size:clamp(1.9rem,4vw,2.6rem); margin:0 0 12px; }
+  .gal-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px 26px;
+  }
+  .gal-item{
+    aspect-ratio:4/5;
+    border-radius:6px;
+    overflow:hidden;
+    background:var(--white);
+    padding:10px;
+  }
+  .gal-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:2px;
+    display:block;
+  }
+  .gal-item:nth-child(1){ transform:rotate(-3deg); border:4px solid var(--orange); }
+  .gal-item:nth-child(2){ transform:rotate(2deg); border:4px solid var(--purple); }
+  .gal-item:nth-child(3){ transform:rotate(-2deg); border:4px solid var(--green); }
+  .gal-item:nth-child(4){ transform:rotate(3deg); border:4px solid var(--gold); }
+  .gal-item:nth-child(5){ transform:rotate(-1.5deg); border:4px solid var(--orange); grid-column:span 1; }
+  @media (max-width:820px){
+    .gal-item:nth-child(5){ grid-column:span 2; aspect-ratio:16/9; }
+  }
+
+  /* ---------- DETAILS ---------- */
+  .details{
+    background:linear-gradient(100deg, var(--purple) 0 55%, var(--orange) 55% 100%);
+    color:var(--white);
+  }
+  .det-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+  }
+  .det-card{
+    background:rgba(255,255,255,0.08);
+    border-radius:10px;
+    padding:26px;
+    backdrop-filter:blur(2px);
+  }
+  .det-card .lbl{ font-size:0.85rem; font-weight:700; color:var(--gold); margin-bottom:8px; }
+  .det-card .val{ font-size:1.15rem; font-weight:700; }
+  .det-card .sub{ font-size:0.92rem; color:#EADFF7; margin-top:4px; }
+
+  /* ---------- REGISTER ---------- */
+  .register{ background:var(--white); }
+  .register .head{ text-align:center; max-width:560px; margin:0 auto 42px; }
+  .register h2{ font-size:clamp(1.9rem,4vw,2.6rem); margin:0 0 12px; }
+  form{
+    max-width:640px;
+    margin:0 auto;
+    background:var(--cream);
+    border-radius:14px;
+    padding:36px;
+    border:3px solid var(--ink);
+  }
+  .field{ margin-bottom:22px; }
+  .field label{ display:block; font-weight:700; margin-bottom:8px; font-size:0.95rem; }
+  .field input[type=text],
+  .field input[type=email],
+  .field input[type=tel],
+  .field select{
+    width:100%;
+    padding:12px 14px;
+    border-radius:6px;
+    border:2px solid #D8CDBA;
+    font-size:1rem;
+    font-family:inherit;
+    background:var(--white);
+  }
+  .field input:focus, .field select:focus{ outline:3px solid var(--gold); border-color:var(--orange); }
+  .radio-row{ display:flex; gap:20px; flex-wrap:wrap; }
+  .radio-row label{ font-weight:500; display:flex; align-items:center; gap:8px; }
+  .conditional{
+    border-left:4px solid var(--orange);
+    padding-left:16px;
+    margin-top:14px;
+  }
+  .hidden{ display:none; }
+  .submit-row{ margin-top:30px; }
+  .success-box{
+    display:none;
+    text-align:center;
+    padding:40px 30px;
+    background:var(--green);
+    color:var(--white);
+    border-radius:14px;
+    max-width:640px;
+    margin:0 auto;
+  }
+  .success-box h3{ font-family:'Anton',sans-serif; font-size:1.8rem; margin:0 0 10px; }
+
+  /* ---------- FOOTER ---------- */
+  footer{ background:var(--purple-deep); color:#D9CBEE; padding:44px 0; text-align:center; font-size:0.92rem; }
+  footer .brand{ font-family:'Anton',sans-serif; color:var(--gold); font-size:1.3rem; margin-bottom:10px; }
+
+  @media (max-width: 820px){
+    .why-grid, .det-grid, .card-row, .min-row{ grid-template-columns:1fr; }
+    .gal-grid{ grid-template-columns:repeat(2,1fr); }
+    .why-art{ height:200px; order:-1; }
+    section{ padding:56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= SITE HEADER ================= -->
+<div class="site-header">
+  <div class="wrap">
+    <img src="images/rta-logo.png" alt="Redemption Truth Assembly logo">
+    <div class="name">Redemption Truth Assembly<span>"Reigning in Life in Christ" — Rom. 5:17</span></div>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="ring ring--1"></div>
+  <div class="ring ring--2"></div>
+  <div class="wrap hero-grid">
+    <div class="flyer-wrap">
+      <img src="images/flyer.png" alt="National Youth Convention 2026 flyer — Walk with God, 7th-11th October 2026, Christian Retreat Centre Ikorodu Lagos, registration is free">
+    </div>
+    <div>
+      <p class="kicker">National Youth Convention 2026</p>
+      <p class="scripture" style="font-size:1.15rem; color:var(--cream); max-width:460px;">Every man God ever used walked with Him first. This October, we're calling a generation back to that walk.</p>
+
+      <div class="countdown" id="countdown">
+        <div class="cell"><span class="num" id="cd-days">--</span><span class="lbl">Days</span></div>
+        <div class="cell"><span class="num" id="cd-hours">--</span><span class="lbl">Hours</span></div>
+        <div class="cell"><span class="num" id="cd-mins">--</span><span class="lbl">Mins</span></div>
+        <div class="cell"><span class="num" id="cd-secs">--</span><span class="lbl">Secs</span></div>
+      </div>
+
+      <div class="cta-row">
+        <a href="#register" class="btn">Reserve your spot — it's free</a>
+        <a href="#details" class="btn btn-outline">See dates &amp; venue</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+<!-- ================= WHY ================= -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div>
+      <span class="eyebrow-block">Why this matters</span>
+      <h2>This is for the young person who wants their life to actually count.</h2>
+      <p>Every man God ever used for something great on earth had one thing in common — they walked with Him. Not just believed in Him. Walked with Him. That's the life this convention is calling you into: not religion, not rules, but a real, daily walk with God that shapes how you think, choose, and live.</p>
+      <p>If you're between 16 and 29 (or beyond) and you sense there's more to your life than what you're currently living — this week is for you.</p>
+    </div>
+    <div class="why-art">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT AWAITS ================= -->
+<section class="expect">
+  <div class="wrap">
+    <div class="head">
+      <h2>What you'll walk away with</h2>
+      <p>Five days built around one goal: helping you leave different from how you came.</p>
+    </div>
+    <div class="card-row">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#3B1E6D" stroke-width="2"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg>
+        <h3>A real encounter</h3>
+        <p>Dr. Bimbo Lawal, Pastor Kayode Ibrahim, and other anointed ministers will be ministering across the week — not just speaking, but leading you into an actual encounter with God.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#E15B2D" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+        <h3>Direction for your next step</h3>
+        <p>You'll get to sit with professionals from different fields who'll speak practically into your career, calling, and the decisions in front of you right now.</p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#2F8F52" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3>A community, not a crowd</h3>
+        <p>Over 200 young people registered for the last edition. You won't be figuring this out alone — you'll be walking it out alongside others your age.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MINISTERS ================= -->
+<section class="ministers">
+  <div class="wrap">
+    <h2 class="display">Who's ministering</h2>
+    <div class="min-row">
+      <div class="min-card">
+        <div class="min-photo">BL</div>
+        <h3>Dr. Bimbo Lawal</h3>
+        <p>Minister</p>
+      </div>
+      <div class="min-card">
+        <div class="min-photo">KI</div>
+        <h3>Pastor Kayode Ibrahim</h3>
+        <p>Minister</p>
+      </div>
+      <div class="min-card">
+        <div class="min-photo">+</div>
+        <h3>Other anointed ministers</h3>
+        <p>Joining across the week</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAT ================= -->
+<section class="stat">
+  <div class="wrap">
+    <div class="num display">200+</div>
+    <p>young people registered for the last edition — and we're believing for even more this year.</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery">
+  <div class="wrap">
+    <div class="head">
+      <h2>Moments from last year</h2>
+      <p>A few moments from past editions of the convention.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item"><img src="images/gallery-4.jpg" alt="Ministration during a past National Youth Convention session" loading="lazy"></div>
+      <div class="gal-item"><img src="images/gallery-2.jpg" alt="Youth gathered together after a past Redemption Truth Assembly service" loading="lazy"></div>
+      <div class="gal-item"><img src="images/gallery-1.jpg" alt="Minister leading worship on stage at a past convention" loading="lazy"></div>
+      <div class="gal-item"><img src="images/gallery-3.jpg" alt="Youth in a moment of prayer during a past convention session" loading="lazy"></div>
+      <div class="gal-item"><img src="images/gallery-5.jpg" alt="Youth engaged in a teaching session at a past convention" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DETAILS ================= -->
+<section class="details" id="details">
+  <div class="wrap">
+    <div class="det-grid">
+      <div class="det-card">
+        <div class="lbl">When</div>
+        <div class="val">7 – 11 October, 2026</div>
+        <div class="sub">Five days</div>
+      </div>
+      <div class="det-card">
+        <div class="lbl">Where</div>
+        <div class="val">Christian Retreat Centre</div>
+        <div class="sub">1, CRC Close, End of Ago-Iwoye Street, Off Isawo Road, Agric Bus-Stop, Ikorodu, Lagos</div>
+      </div>
+      <div class="det-card">
+        <div class="lbl">Who it's for</div>
+        <div class="val">Older Teens (16–19) &amp; Youth</div>
+        <div class="sub">Registration is completely free</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REGISTER ================= -->
+<section class="register" id="register">
+  <div class="wrap">
+    <div class="head">
+      <h2>Save your seat</h2>
+      <p>Takes less than two minutes. It's completely free.</p>
+    </div>
+
+    <form id="reg-form" name="youth-convention-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="youth-convention-registration">
+      <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+      <div class="field">
+        <label for="fullname">Full name</label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="field">
+        <label>Sex</label>
+        <div class="radio-row">
+          <label><input type="radio" name="sex" value="Male" required> Male</label>
+          <label><input type="radio" name="sex" value="Female"> Female</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="agegroup">Age group</label>
+        <select id="agegroup" name="agegroup" required>
+          <option value="" disabled selected>Select your age group</option>
+          <option>16-19</option>
+          <option>20-24</option>
+          <option>25-29</option>
+          <option>30-34</option>
+          <option>35 and above</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="field">
+        <label for="whatsapp">WhatsApp number</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="If different from your phone number above" required>
+      </div>
+
+      <div class="field">
+        <label for="marital">Marital status</label>
+        <select id="marital" name="marital" required>
+          <option value="" disabled selected>Select</option>
+          <option>Single</option>
+          <option>Married</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="workstatus">Work status</label>
+        <select id="workstatus" name="workstatus" required>
+          <option value="" disabled selected>Select</option>
+          <option>Student (Secondary/Undergraduate)</option>
+          <option>Graduate</option>
+          <option>Apprentice</option>
+          <option>Employed</option>
+          <option>Self-employed</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="schoolwork">School / Workplace</label>
+        <input type="text" id="schoolwork" name="schoolwork" required>
+      </div>
+
+      <div class="field">
+        <label>Have you attended this programme before?</label>
+        <div class="radio-row">
+          <label><input type="radio" name="attended_before" value="Yes" required> Yes</label>
+          <label><input type="radio" name="attended_before" value="No"> No</label>
+        </div>
+        <div class="conditional hidden" id="years-wrap">
+          <label for="years">If yes, which years?</label>
+          <input type="text" id="years" name="years_attended" placeholder="e.g. 2023, 2024">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>How will you be participating?</label>
+        <div class="radio-row">
+          <label><input type="radio" name="mode" value="Online" required> Online</label>
+          <label><input type="radio" name="mode" value="Offline"> Offline (on-site)</label>
+        </div>
+        <div class="conditional hidden" id="hostel-wrap">
+          <label>Will you be needing hostel accommodation?</label>
+          <div class="radio-row">
+            <label><input type="radio" name="hostel" value="Yes"> Yes</label>
+            <label><input type="radio" name="hostel" value="No"> No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn">Register — it's free</button>
+      </div>
+    </form>
+
+    <div class="success-box" id="success-box">
+      <h3>You're in! 🎉</h3>
+      <p>Your registration for National Youth Convention 2026 has been received. A confirmation has been sent to your email — we can't wait to see you there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <img src="images/rta-logo.png" alt="Redemption Truth Assembly logo" style="width:64px;height:auto;margin:0 auto 16px;border-radius:6px;background:var(--cream);padding:6px;">
+    <div class="brand">National Youth Convention 2026</div>
+    <p>Redemption Truth Assembly · Walking with God</p>
+    <p>Questions? Call/WhatsApp <strong>08033592644</strong> or <strong>08023184906</strong></p>
+  </div>
+</footer>
+
+<script>
+  // ---------- Countdown ----------
+  // Adjust the exact start time below once confirmed (currently set to 12:00 AM WAT on 7 Oct 2026)
+  const eventDate = new Date("2026-10-07T00:00:00+01:00").getTime();
+
+  function updateCountdown(){
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+    if(diff <= 0){
+      document.getElementById('cd-days').textContent = '0';
+      document.getElementById('cd-hours').textContent = '0';
+      document.getElementById('cd-mins').textContent = '0';
+      document.getElementById('cd-secs').textContent = '0';
+      return;
+    }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const secs = Math.floor((diff % (1000*60)) / 1000);
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = hours;
+    document.getElementById('cd-mins').textContent = mins;
+    document.getElementById('cd-secs').textContent = secs;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // ---------- Conditional fields ----------
+  document.querySelectorAll('input[name="attended_before"]').forEach(el=>{
+    el.addEventListener('change', ()=>{
+      document.getElementById('years-wrap').classList.toggle('hidden', el.value !== 'Yes' || !el.checked);
+      if(el.checked && el.value === 'Yes'){
+        document.getElementById('years-wrap').classList.remove('hidden');
+      }
+      if(el.checked && el.value === 'No'){
+        document.getElementById('years-wrap').classList.add('hidden');
+      }
+    });
+  });
+
+  document.querySelectorAll('input[name="mode"]').forEach(el=>{
+    el.addEventListener('change', ()=>{
+      if(el.checked && el.value === 'Offline'){
+        document.getElementById('hostel-wrap').classList.remove('hidden');
+      }
+      if(el.checked && el.value === 'Online'){
+        document.getElementById('hostel-wrap').classList.add('hidden');
+      }
+    });
+  });
+
+  // ---------- Form submission (Netlify Forms) ----------
+  const form = document.getElementById('reg-form');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    })
+    .then(() => {
+      form.style.display = 'none';
+      document.getElementById('success-box').style.display = 'block';
+      document.getElementById('success-box').scrollIntoView({behavior:'smooth'});
+    })
+    .catch((error) => {
+      alert('Something went wrong submitting your registration. Please check your connection and try again.');
+      console.error(error);
+    });
+  });
+</script>
+
+</body>
+</html>
